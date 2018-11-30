@@ -164,7 +164,7 @@ To set or add characters as part of word characters
     >>> keyword_processor.add_keyword('Big Apple')
     >>> print(keyword_processor.extract_keywords('I love Big Apple/Bay Area.'))
     >>> # ['Big Apple']
-    >>> keyword_processor.add_non_word_boundary('/')
+    >>> keyword_processor.add_non_word_boundary('/') # 带有该字符的词不被匹配
     >>> print(keyword_processor.extract_keywords('I love Big Apple/Bay Area.'))
     >>> # []
 
